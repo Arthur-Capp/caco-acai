@@ -1,0 +1,130 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffee00;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+header, main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    background-color: #4a148c;/* Roxo açaí */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+.titulo-acai {
+    font-size: 2.5em; /* Aumentamos a fonte para parecer um título */
+    font-weight: bold;
+    vertical-align: middle; /* Truque para alinhar com a imagem */
+}
+
+.logo-macaco {
+    height: 70px;
+    vertical-align: middle; /* Truque para alinhar com o texto */
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+/* Seção de produtos */
+.secao-produtos {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.produto {
+    background-color: #4a148c42;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.produto .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.produto .nome {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.produto .preco {
+    color: #666;
+}
+
+/* Controle de quantidade */
+.controle-quantidade {
+    display: flex;
+    align-items: center;
+}
+
+.controle-quantidade button {
+    width: 30px;
+    height: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.controle-quantidade span {
+    padding: 0 15px;
+    font-size: 1.1em;
+    min-width: 20px;
+    text-align: center;
+}
+
+/* Seção do Carrinho */
+#carrinho {
+    background-color: #fff3e0; /* Um amarelo claro */
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px dashed #4a148c;
+}
+
+#lista-carrinho {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#lista-carrinho li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#lista-carrinho .placeholder {
+    color: #888;
+    justify-content: center;
+    border-bottom: none;
+}
+
+#total-carrinho {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 1.3em;
+    font-weight: bold;
+}

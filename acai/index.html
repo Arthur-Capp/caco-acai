@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Açaí do Caco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <span class="titulo-acai">Açaí do Caco</span>
+        <img class="logo-macaco" src="caco_acai2 (2).png">
+    </header>
+
+    <main>
+        <h2>Monte seu pedido</h2>
+
+        <section class="secao-produtos">
+            <h3>Qual o tamanho da sua fome?</h3>
+            <div class="lista-produtos">
+                <div class="produto" data-id="1" data-nome="Copo 300 ml" data-preco="15.00">
+                    <div class="info">
+                        <span class="nome">Copo 300 ml</span>
+                        <span class="preco">R$ 15,00</span>
+                    </div>
+                    <div class="controle-quantidade">
+                        <button class="btn-remover">-</button>
+                        <span class="quantidade">0</span>
+                        <button class="btn-adicionar">+</button>
+                    </div>
+                </div>
+                <div class="produto" data-id="2" data-nome="Copo 500 ml" data-preco="17.00">
+                    <div class="info">
+                        <span class="nome">Copo 500 ml</span>
+                        <span class="preco">R$ 17,00</span>
+                    </div>
+                    <div class="controle-quantidade">
+                        <button class="btn-remover">-</button>
+                        <span class="quantidade">0</span>
+                        <button class="btn-adicionar">+</button>
+                    </div>
+                </div>
+                <div class="produto" data-id="3" data-nome="Copo 750 ml" data-preco="20.00">
+                    <div class="info">
+                        <span class="nome">Copo 750 ml</span>
+                        <span class="preco">R$ 20,00</span>
+                    </div>
+                    <div class="controle-quantidade">
+                        <button class="btn-remover">-</button>
+                        <span class="quantidade">0</span>
+                        <button class="btn-adicionar">+</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao-produtos">
+            <h3>Adicione complementos:</h3>
+            <div class="lista-produtos">
+                <div class="produto" data-id="4" data-nome="Banana" data-preco="3.00">
+                    <div class="info">
+                        <span class="nome">Banana</span>
+                        <span class="preco">R$ 3,00</span>
+                    </div>
+                    <div class="controle-quantidade">
+                        <button class="btn-remover">-</button>
+                        <span class="quantidade">0</span>
+                        <button class="btn-adicionar">+</button>
+                    </div>
+                </div>
+                <div class="produto" data-id="5" data-nome="Morango" data-preco="4.00">
+                    <div class="info">
+                        <span class="nome">Morango</span>
+                        <span class="preco">R$ 4,00</span>
+                    </div>
+                    <div class="controle-quantidade">
+                        <button class="btn-remover">-</button>
+                        <span class="quantidade">0</span>
+                        <button class="btn-adicionar">+</button>
+                    </div>
+                </div>
+                <div class="produto" data-id="6" data-nome="Avelã" data-preco="3.00">
+                    <div class="info">
+                        <span class="nome">Creme de Avelã</span>
+                        <span class="preco">R$ 3,00</span>
+                    </div>
+                    <div class="controle-quantidade">
+                        <button class="btn-remover">-</button>
+                        <span class="quantidade">0</span>
+                        <button class="btn-adicionar">+</button>
+                    </div>
+                </div>
+                <div class="produto" data-id="7" data-nome="Bala de Goma" data-preco="5.00">
+                    <div class="info">
+                        <span class="nome">Bala de Goma</span>
+                        <span class="preco">R$ 5,00</span>
+                    </div>
+                    <div class="controle-quantidade">
+                        <button class="btn-remover">-</button>
+                        <span class="quantidade">0</span>
+                        <button class="btn-adicionar">+</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="carrinho">
+            <h3>Seu Carrinho</h3>
+            <ul id="lista-carrinho">
+                <li class="placeholder">Seu carrinho está vazio.</li>
+            </ul>
+            <div id="total-carrinho">
+                <strong>Total:</strong>
+                <span id="valor-total">R$ 0,00</span>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
