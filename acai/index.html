@@ -10,14 +10,14 @@
 
     <header>
         <span class="titulo-acai">Açaí do Caco</span>
-        <img class="logo-macaco" src="caco_acai2 (2).png">
+        <img class="logo-macaco" src="caco_acai2 (2).png" alt="Logo Açaí do Caco">
     </header>
 
     <main>
         <h2>Monte seu pedido</h2>
 
         <section class="secao-produtos">
-            <h3>Qual o tamanho da sua fome?</h3>
+            <h3>Qual o tamanho da sua vontade?</h3>
             <div class="lista-produtos">
                 <div class="produto" data-id="1" data-nome="Copo 300 ml" data-preco="15.00">
                     <div class="info">
@@ -114,8 +114,22 @@
                 <strong>Total:</strong>
                 <span id="valor-total">R$ 0,00</span>
             </div>
+            
+            <button id="btn-finalizar">Finalizar o pedido</button>
         </section>
     </main>
+
+    <footer>
+        <a href="404.html" class="btn-erro-teste">Testar Página de Erro 404</a>
+    </footer>
+
+    <div id="modal-overlay">
+        <div id="modal-caixa">
+            <button id="modal-fechar">X</button>
+            <img src="caco_com_pedido.png" alt="Caco Feliz" style="width:100px; margin-bottom:15px;">
+            <p>O Caco está a caminho com seu pedido!</p>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

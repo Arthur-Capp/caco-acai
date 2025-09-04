@@ -7,7 +7,7 @@ body {
     padding: 20px;
 }
 
-header, main {
+header, main, footer {
     max-width: 800px;
     margin: 0 auto;
 }
@@ -21,19 +21,18 @@ header {
     margin-bottom: 20px;
 }
 
-
 .titulo-acai {
-    font-size: 2.5em; /* Aumentamos a fonte para parecer um título */
+    font-size: 2.5em;
     font-weight: bold;
-    vertical-align: middle; /* Truque para alinhar com a imagem */
+    vertical-align: middle;
 }
 
 .logo-macaco {
     height: 70px;
-    vertical-align: middle; /* Truque para alinhar com o texto */
+    vertical-align: middle;
 }
 
-h1, h2, h3 {
+h2, h3 {
     text-align: center;
 }
 
@@ -97,7 +96,7 @@ h1, h2, h3 {
 
 /* Seção do Carrinho */
 #carrinho {
-    background-color: #fff3e0; /* Um amarelo claro */
+    background-color: #fff3e0;
     padding: 20px;
     border-radius: 8px;
     border: 2px dashed #4a148c;
@@ -127,4 +126,92 @@ h1, h2, h3 {
     text-align: right;
     font-size: 1.3em;
     font-weight: bold;
+}
+
+/* Botão de teste do erro 404 */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.btn-erro-teste {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e53935;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-erro-teste:hover {
+    background-color: #c62828;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Estilo do botão "Finalizar o pedido" */
+#btn-finalizar {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#btn-finalizar:hover {
+    background-color: #45a049;
+}
+
+/* Fundo do Modal (cobre a tela inteira) */
+#modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none; 
+}
+
+/* A caixa de mensagem branca */
+#modal-caixa {
+    background-color: #45a049;
+    padding: 30px 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+#modal-caixa p {
+    font-size: 1.3em;
+    color: #333;
+    margin: 0;
+}
+
+/* Botão de fechar (X) */
+#modal-fechar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
 }
